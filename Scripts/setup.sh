@@ -38,7 +38,7 @@ fi
 rm -rf "$TEMPLATE_DIR"
 
 # $1 is project name 
-sed -i '' "s/TuistTemplate/$1/g" Sources/*.swift
-sed -i '' "s/TuistTemplate/$1/g" Sources/*/*.swift
+sed -i '' "s/TuistTemplate/APP_NAME/g" Sources/*.swift
+sed -i '' "s/TuistTemplate/APP_NAME/g" Sources/*/*.swift
 
 echo "✅ Setup completed for $APP_NAME"
